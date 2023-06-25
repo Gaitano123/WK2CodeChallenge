@@ -1,9 +1,11 @@
+//First of all I have to get the data using the Fetch() method
 function fetchData() {
     fetch('http://localhost:3000/characters')
       .then(res => res.json())
       .then(data => data.forEach(character => createCard(character)));
   }
   
+  //Now that I have the data I have to put It in the DOM
   function createCard(character) {
     const li = document.createElement('li');
     li.className = "card";
@@ -38,6 +40,7 @@ function fetchData() {
   
   fetchData();
   
+//Here I have to prevent the Submit Input from refreshing while being clicked
 
 document.addEventListener("DOMContentLoaded", () => {
     let form = document.querySelector('form')
