@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url();
+    background-color: rgb(33,97,95);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -18,8 +18,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(155,246,227);
+    background-color: rgb(99,244,223);
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
 li{
@@ -48,8 +49,8 @@ li{
     font-size: 33px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    background-color: rgb(155,246,227);
-    margin: 30px;
+    background-color: rgb(99,244,223);
+    margin: 100px;
     border-radius: 10px;
 }
 
@@ -69,5 +70,4 @@ input{
     background-color: white;
     border-color: white solid;
     float: right;
-
 }

@@ -25,7 +25,20 @@ document.addEventListener("DOMContentLoaded", () => {
     let form = document.querySelector('form')
     form.addEventListener('submit', (e) => {
         e.preventDefault()
-        theInfo(e.target.input.value)
+        trial(e.target.input.value)
         form.reset()
     })
 })
+
+function trial (){
+    const list = document.createElement('li')
+    list.className = 'list'
+    list.innerHTML = `
+    <p>${characters.name}</p>
+    <div>
+    <img src="${characters.image}">
+    <p>${characters.id}</p>
+    <p>Votes: ${characters.votes}</p>
+    </div>
+    `
+}
